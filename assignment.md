@@ -21,7 +21,7 @@ Write a Python code to multiply each element in the array by 2.
 Answer:
 
 ```python
-
+arr *= 2
 ```
 
 ### Question 2
@@ -37,7 +37,7 @@ Write a Python code to select the second row of the array.
 Answer:
 
 ```python
-
+arr[1]
 ```
 
 ### Question 3
@@ -47,7 +47,12 @@ Create a 2D numpy array of shape (5, 5) filled with the number 1.
 Answer:
 
 ```python
+arr = np.zeros((5, 5))
 
+for i in range(5):
+    arr[i] = 1
+
+arr
 ```
 
 ### Question 4
@@ -63,7 +68,7 @@ Write a Python code to calculate the sum of all the elements in each row.
 Answer:
 
 ```python
-
+arr.sum(axis=1)
 ```
 
 ### Question 5
@@ -79,7 +84,7 @@ Write a Python code to calculate the average of all the elements.
 Answer:
 
 ```python
-
+np.mean(arr)
 ```
 
 ## Submission
